@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 일기예보</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* 상남자는 CSS 파일 따위 안씁니다. */
+
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 20px;
+
+        width: 30vw;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>용산구의 일기예보</h1>
+    <h2></h2>
+    <img id="weather-img" src="https://openweathermap.org/img/wn/01d@2x.png" />
+    <main>
+      <div>
+        <p>온도</p>
+        <p id="temp">Loading...</p>
+      </div>
+      <hr />
+      <div>
+        <p>습도</p>
+        <p id="humidity">Loading...</p>
+      </div>
+      <hr />
+      <div>
+        <p>바람</p>
+        <p id="wind">Loading...</p>
+      </div>
+    </main>
+  </body>
+
+  <script src="index.js"></script>
+</html>
